@@ -1,0 +1,33 @@
+.page-header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
+    position: relative;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.page-header h1{
+    color: var(--color-dark-theme);
+    font-size: 56px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.page-header h1>span{
+    color: white;
+}
+
+.page-header > span{
+    color: hsla(0, 0%, 100%, .07);;
+    font-size: 110px;
+    font-weight: 800;
+    left: 50%;
+    letter-spacing: 10px;
+    line-height: .7;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+

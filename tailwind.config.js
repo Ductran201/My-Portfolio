@@ -7,5 +7,8 @@ export default {
   theme: {
     extend: {},
   },
+  corePlugins: {
+    preflight: false, // Disables the default preflight styles (reset)
+  },
   plugins: [],
 }

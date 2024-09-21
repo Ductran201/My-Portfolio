@@ -1,0 +1,199 @@
+.container {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-4{
+    width: 33.3333333333%;
+    padding: 0 15px;
+}
+
+.contact-info h3 {
+    font-size: 26px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.contact-info p {
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+.contact-info__list li {
+    font-weight: 600;
+    line-height: 25px;
+    margin-bottom: 20px;
+    padding-left: 50px;
+    position: relative;
+}
+
+.contact-info__list li .icon {
+    color: var(--main-color) !important;
+    font-size: 36px;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.contact-info__list li span {
+    color: var(--txt-color);
+    display: block;
+    font-weight: 400;
+    opacity: .8;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.contact-info .social-list {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.contact-info .social-list li {
+    margin-right: 8px;
+}
+
+.contact-info .social-list li a {
+    align-items: center;
+    background-color: var(--nav-bg-color);
+    border-radius: 50%;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    transition: all .3s ease;
+    width: 40px;
+}
+
+.col-8 {
+    width: 66.6666666667%;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-form .field {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.contact-form__info {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.contact-form__info-email, .contact-form__info-name {
+    width: calc(50% - 15px);
+}
+
+.contact-form__info-email input, .contact-form__info-name input {
+    width: 100%;
+}
+
+.contact-form__message, .contact-form__subject {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-form__message input, .contact-form__message textarea, .contact-form__subject input, .contact-form__subject textarea {
+    flex: 1 1;
+}
+
+.contact input, .contact textarea {
+    background-color: gray;
+    border: 1px solid gray;
+    border-radius: 30px;
+    color: var(--txt-color);
+    font-size: 15px;
+    outline: none !important;
+    padding: 1rem 2rem;
+    transition: all .3s ease;
+}
+
+.contact-form__message textarea, .contact-form__subject textarea {
+    min-height: 200px;
+}
+
+.btn {
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    border-radius: 35px;
+    color: var(--txt-color);
+    cursor: pointer;
+    cursor: pointer !important;
+    display: inline-block;
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+    outline: none !important;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-decoration: none !important;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    transition: all .25s ease-in-out;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.btn-text {
+    color: var(--txt-color);
+    display: block;
+    padding: 16px 32px 16px 64px;
+    position: relative;
+    transition: all .3s ease;
+    z-index: 2;
+}
+
+.btn-icon, .btn-icon:before {
+    background-color: var(--main-color);
+    position: absolute;
+}
+
+.btn-icon {
+    align-items: center;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-name: slide-out;
+    animation-name: slide-out;
+    border-radius: 50%;
+    bottom: 0;
+    color: #fff;
+    display: flex;
+    font-size: 28px;
+    height: 55px;
+    justify-content: center;
+    left: -1px;
+    top: -1px;
+    width: 55px;
+}
+
+.btn-icon:before {
+    content: "";
+    height: 100%;
+    left: -180px;
+    top: 0;
+    width: 200px;
+    z-index: -10;
+}
