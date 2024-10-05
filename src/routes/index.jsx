@@ -1,12 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 // import Home from "../pages/Home/Home";
-import Project from "../pages/Project/Project";
-import About from "../pages/About/About";
-import Contact from "../pages/Contact/Contact";
+
 import NotFound from "../pages/NotFound";
 import MainLayout from "../layout/MainLayout";
-import AboutDuc from "../pages/about/AboutDuc";
+import About from "../pages/about/About";
 import Home from "../pages/Home/Home";
+import Project from "../pages/Project/Project";
+import Contact from "../pages/contact/Contact";
 
 export const routes = createBrowserRouter(
   // [
@@ -49,16 +49,16 @@ export const routes = createBrowserRouter(
         },
         {
           path: "/about",
-          element: <AboutDuc />,
+          element: <About />,
         },
-        // {
-        //   index: true,
-        //   element: <HomeDuc />,
-        // },
-        // {
-        //   index: true,
-        //   element: <HomeDuc />,
-        // },
+        {
+          path: "/project",
+          element: <Project />,
+        },
+        {
+          path: "/contact",
+          element: <Contact />,
+        },
       ],
     },
     {

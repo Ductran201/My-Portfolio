@@ -1,14 +1,9 @@
-.container {
-    margin: auto;
-    max-width: 1200px;
-}
-
 .row {
     display: flex;
     flex-wrap: wrap;
 }
 
-.col-4{
+.col-4 {
     width: 33.3333333333%;
     padding: 0 15px;
 }
@@ -71,8 +66,14 @@
     width: 40px;
 }
 
+.contact-info .social-list li a i {
+    color: var(--txt-color);
+    font-size: 22px;
+}
+
 .col-8 {
     width: 66.6666666667%;
+    padding: 0 15px;
 }
 
 .contact-form {
@@ -92,13 +93,22 @@
     justify-content: space-between;
 }
 
-
 .contact-form__info-email, .contact-form__info-name {
     width: calc(50% - 15px);
 }
 
 .contact-form__info-email input, .contact-form__info-name input {
     width: 100%;
+}
+
+.contact input, .contact textarea {
+    background-color: var(--nav-bg-color);
+    border: 1px solid var(--nav-bg-color);
+    border-radius: 30px;
+    color: var(--txt-color);
+    font-size: 15px;
+    padding: 1rem 2rem;
+    transition: all .3s ease;
 }
 
 .contact-form__message, .contact-form__subject {
@@ -110,62 +120,6 @@
     flex: 1 1;
 }
 
-.contact input, .contact textarea {
-    background-color: gray;
-    border: 1px solid gray;
-    border-radius: 30px;
-    color: var(--txt-color);
-    font-size: 15px;
-    outline: none !important;
-    padding: 1rem 2rem;
-    transition: all .3s ease;
-}
-
 .contact-form__message textarea, .contact-form__subject textarea {
     min-height: 200px;
-}
-
-.btn-text {
-    /* color: var(--txt-color);
-    display: block;
-    padding: 16px 32px 16px 64px;
-    position: relative;
-    transition: all .3s ease;
-    z-index: 2; */
-}
-
-.btn-icon, .btn-icon:before {
-    background-color: var(--main-color);
-    position: absolute;
-}
-
-.btn-icon {
-    align-items: center;
-    -webkit-animation-duration: .3s;
-    animation-duration: .3s;
-    -webkit-animation-fill-mode: backwards;
-    animation-fill-mode: backwards;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    -webkit-animation-name: slide-out;
-    animation-name: slide-out;
-    border-radius: 50%;
-    bottom: 0;
-    color: #fff;
-    display: flex;
-    font-size: 28px;
-    height: 55px;
-    justify-content: center;
-    left: -1px;
-    top: -1px;
-    width: 55px;
-}
-
-.btn-icon:before {
-    content: "";
-    height: 100%;
-    left: -180px;
-    top: 0;
-    width: 200px;
-    z-index: -10;
 }

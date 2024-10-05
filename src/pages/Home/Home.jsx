@@ -19,14 +19,18 @@ export default function Home() {
         <div className="home-text">
           <div className="home-text-wrap">
             <h1>
-              Hello, I'm
-              <span>Tran Trong Duc</span>
+              I'm Tran Trong Duc
+              <span>Web Developer</span>
             </h1>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Praesentium alias eveniet dolore dolor vero illum delectus
               doloremque aliquid quo? Animi optio, necessitatibus asperiores at
-              sapiente exercitationem quam accusantium porro libero.
+              sapiente exercitationem quam accusantium porro libero. Lorem ipsum
+              dolor sit amet consectetur, adipisicing elit. Ullam dolores totam
+              quam aut modi possimus, nostrum voluptatibus explicabo velit?
+              Aperiam officiis eveniet, id enim corporis adipisci et delectus
+              voluptatibus blanditiis!
             </p>
             <ButtonCustom className="portfolio-btn">
               <Link to="/about">

@@ -22,8 +22,8 @@
 
 .btn-text{
   position: relative;
-  /* z-index: 2; */
-  /* color: var(--txt-color); */
+  z-index: 2;
+  /* color: white; */
   transition: all 0.3s ease;
   display: block;
   padding: 16px 32px 16px 64px;

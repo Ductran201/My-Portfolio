@@ -14,7 +14,6 @@ body{
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
-
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -103,6 +102,8 @@ hr {
 
 .section{
   padding: 0 20px;
+  position: relative;
+  /* margin-bottom: 40px; */
 }
 
 .container {
@@ -124,6 +125,11 @@ hr {
     opacity: 0;
     display: none;
   }
+}
+
+.active{
+    background-color: #ffb400 !important;
+    color: #fff !important;
 }
 
 

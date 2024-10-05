@@ -1,7 +1,7 @@
 import React from "react";
-import "./aboutDuc.css";
-import TitleHeader from "../../components/title-header";
-import ButtonCustom from "../../components/button/ButtonCustom";
+import "./about.css";
+import TitleHeader from "../../components/title-header/index.jsx";
+import ButtonCustom from "../../components/button/ButtonCustom.jsx";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import AddIcon from "@mui/icons-material/Add";
 import {
@@ -10,30 +10,50 @@ import {
   sass,
   javascript,
   java,
-  bootstrap,
-  responsive,
   react,
   redux,
   git,
   axios,
+  tailwind,
+  go,
+  spring,
+  mySQL,
 } from "../../assets/skills/skills.js";
 
 import { Link } from "react-router-dom";
 
-export default function AboutDuc() {
+export default function About() {
   const skills = [
+    // {
+    //   name: "html",
+    //   path: html,
+    // },
     {
-      name: "html",
-      path: html,
+      name: "react",
+      path: react,
+    },
+
+    // {
+    //   name: "css",
+    //   path: css,
+    // },
+    {
+      name: "tailwind",
+      path: tailwind,
+    },
+
+    {
+      name: "spring",
+      path: spring,
     },
     {
-      name: "css",
-      path: css,
+      name: "mySQL",
+      path: mySQL,
     },
-    {
-      name: "sass",
-      path: sass,
-    },
+    // {
+    //   name: "sass",
+    //   path: sass,
+    // },
     {
       name: "javascript",
       path: javascript,
@@ -42,22 +62,19 @@ export default function AboutDuc() {
       name: "java",
       path: java,
     },
+
     {
-      name: "bootstrap",
-      path: bootstrap,
+      name: "go",
+      path: go,
     },
-    {
-      name: "responsive web design",
-      path: responsive,
-    },
-    {
-      name: "react",
-      path: react,
-    },
-    {
-      name: "redux",
-      path: redux,
-    },
+    // {
+    //   name: "bootstrap",
+    //   path: bootstrap,
+    // },
+    // {
+    //   name: "redux",
+    //   path: redux,
+    // },
     {
       name: "git",
       path: git,

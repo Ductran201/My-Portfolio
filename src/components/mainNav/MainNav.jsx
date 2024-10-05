@@ -39,13 +39,14 @@ export default function MainNav() {
     //   icon: <Home />,
     // },
   ];
+
   return (
     <>
       <div className="nav-list">
         {listNav.map((element, index) => (
           <NavLink key={index} to={element.path}>
             <h2>{element.title}</h2>
-            <span>{element.icon}</span>
+            {element.icon}
           </NavLink>
         ))}
       </div>
