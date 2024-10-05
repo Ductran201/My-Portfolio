@@ -2,49 +2,53 @@ import React from "react";
 import "./home.css";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { Link } from "react-router-dom";
+import ButtonCustom from "../../components/button/ButtonCustom";
 export default function Home() {
   return (
+    // <div className="main">
     <>
       <div className="slide"></div>
-      <div className="section home-content">
-        <div className="color-block" />
+      <div className="section home">
+        <div className="color-block"></div>
 
-        <div className="z-[1]">
-          <img className="avatar" src="src\assets\portfolio.jpg" alt="" />
+        <div className="home-img">
+          {/* <div className="home-img-wrap"></div> */}
+          <img src="src\assets\portfolio.jpg" alt="" />
         </div>
 
-        <div className="home-introduce">
-          <div className="home-introduce-wrapper">
-            <h1 className="">
-              I'm Tran Trong Duc
-              <span>Web Developer !</span>
+        <div className="home-text">
+          <div className="home-text-wrap">
+            <h1>
+              Hello, I'm
+              <span>Tran Trong Duc</span>
             </h1>
-            <p className="text-[16px] mt-[15px] mb-[28px] leading-[35px]">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Doloremque a omnis officia cum quisquam eius, architecto sapiente
-              voluptates rem, sed tempora explicabo voluptas nisi vitae suscipit
-              natus expedita asperiores adipisci!
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Praesentium alias eveniet dolore dolor vero illum delectus
+              doloremque aliquid quo? Animi optio, necessitatibus asperiores at
+              sapiente exercitationem quam accusantium porro libero.
             </p>
-
-            <button className="home-btn">
-              <Link to={"/about"}>
-                <span className="btn-arrow">
-                  <ArrowForwardIcon className="" />
-                </span>
+            <ButtonCustom className="portfolio-btn">
+              <Link to="/about">
                 <span className="btn-text">About</span>
-              </Link>
-            </button>
-            <button className="home-btn ml-[30px]">
-              <Link to={"/project"}>
-                <span className="btn-text">Project</span>
-                <span className="btn-arrow">
-                  <ArrowForwardIcon className="" />
+                <span className="btn-icon">
+                  <ArrowForwardIcon />
                 </span>
               </Link>
-            </button>
+            </ButtonCustom>
+            <ButtonCustom className="about-btn ml-[48px]">
+              <Link to="/project">
+                <span className="btn-text">Project</span>
+                <span className="btn-icon">
+                  <ArrowForwardIcon />
+                </span>
+              </Link>
+            </ButtonCustom>
           </div>
         </div>
       </div>
     </>
+
+    // </div>
   );
 }

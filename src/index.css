@@ -19,6 +19,16 @@ body{
   scroll-behavior: smooth;
 }
 
+.main{
+  color: white;
+  background-color: black;
+  position: relative;
+}
+
+button,a{
+  cursor: pointer;
+}
+
 a{
   text-decoration: none;
   color: unset;
@@ -39,13 +49,19 @@ img {
 }
 
 
-/* hr {
+hr {
   margin: 1rem 0;
-  color: inherit;
-  background-color: #252525;
+  /* color: inherit; */
+  /* color: red; */
+  /* background-color: #252525; */
+  /* background-color: red; */
   border: 0;
   opacity: 0.25;
-} */
+  border-top: 1px solid #252525;
+  margin: 70px auto 55px;
+  max-width: 40%;
+
+}
 
 :root{
   --color-dark-theme: #ffb400;

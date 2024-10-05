@@ -125,41 +125,13 @@
     min-height: 200px;
 }
 
-.btn {
-    background-color: transparent;
-    border: 1px solid var(--main-color);
-    border-radius: 35px;
-    color: var(--txt-color);
-    cursor: pointer;
-    cursor: pointer !important;
-    display: inline-block;
-    font-family: Poppins, sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 1.4;
-    outline: none !important;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    text-decoration: none !important;
-    text-overflow: ellipsis;
-    text-transform: uppercase;
-    transition: all .25s ease-in-out;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    vertical-align: middle;
-    white-space: nowrap;
-    z-index: 1;
-}
-
 .btn-text {
-    color: var(--txt-color);
+    /* color: var(--txt-color);
     display: block;
     padding: 16px 32px 16px 64px;
     position: relative;
     transition: all .3s ease;
-    z-index: 2;
+    z-index: 2; */
 }
 
 .btn-icon, .btn-icon:before {
